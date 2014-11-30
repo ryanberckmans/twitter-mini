@@ -16,6 +16,12 @@ Once authenticated, I'll need to use my OAuth2 token with a twitter api client. 
 
 At this point, I think I'll need two clients, [TwitterJSClient](https://github.com/BoyCook/TwitterJSClient) and [user-stream](https://github.com/aivis/user-stream) (really, who makes a twitter client without 'twitter' in the name.) TwitterJSClient supports getting data and composing new tweets, but these are one-off api calls, good for ember actions or route transitions. user-stream will trigger a callback when new data is pushed from twitter, good for real-time updates.
 
+## ember-simple-auth-oauth2 troubles
+
+ember-simple-auth-oauth2 seems preconfigured to send passwords directly from your ember.js app. Since this is a toy project, I want to avoid handling passwords in my app. I'm switching to [ember-token-auth](https://github.com/amkirwan/ember-token-auth) which has support for pop-up window authentication.
+
+
+
 # ember-cli Readme
 
 ## Prerequisites
