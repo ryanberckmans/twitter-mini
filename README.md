@@ -1,7 +1,22 @@
 # Twitter-mini
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+twitter-mini is a "mini twitter experience" using ember-cli and the twitter api.
+
+# Dev Log
+
+## Choosing a twitter api client
+
+I haven't used the twitter api since they disabled unauthenticated access. I've also never used twitter from the node/bower/ember stack. Once my twitter api client is up and running, I'll be working fully in ember, which is a happy place to be. So I'm doing the api client first.
+
+All planned features are read-only, except composing a tweet for the currently authenticated user. So I'll need (1) an authenticated user to compose a tweet for themselves; and, (2) and authenticated user to read data from the twitter api, since they disallow unauthenticated access.
+
+For authentication, I will use OAuth2 with [ember-simple-auth-oauth2](https://github.com/simplabs/ember-simple-auth/tree/master/packages/ember-simple-auth-oauth2), by simplabs. I'm familiar with ember-simple-auth, so this was an easy win. I also checked out [ember-token-auth](https://github.com/amkirwan/ember-token-auth).
+
+Once authenticated, I'll need to use my OAuth2 token with a twitter api client. I checked out Twitter's official list of api clients and ran a [bower.io](http://bower.io/) search for 'twitter'.
+
+At this point, I think I'll need two clients, [TwitterJSClient](https://github.com/BoyCook/TwitterJSClient) and [user-stream](https://github.com/aivis/user-stream) (really, who makes a twitter client without 'twitter' in the name.) TwitterJSClient supports getting data and composing new tweets, but these are one-off api calls, good for ember actions or route transitions. user-stream will trigger a callback when new data is pushed from twitter, good for real-time updates.
+
+# ember-cli Readme
 
 ## Prerequisites
 
