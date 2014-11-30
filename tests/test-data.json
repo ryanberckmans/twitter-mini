@@ -1,0 +1,41 @@
+{
+  "users" : {
+    "ryan" : {
+      "lastName" : "Berckmans",
+      "firstName" : "Ryan",
+      "email": "ryanberckmans@gmail.com",
+      "tweets" : {
+        "abc0" : true
+      }
+    },
+    "toby" : {
+      "lastName" : "Jones Berckmans",
+      "firstName" : "Toby",
+      "email": null,
+      "tweets" : {
+        "abc1" : true,
+        "abc2" : true
+      }
+    }
+  },
+  "tweets" : {
+    "abc0" : {
+      "user" : "ryan",
+      "text" : "Hello World :)",
+      "timestamp"   : "2014-07-19T12:30:00.000Z"
+    },
+    "abc1" : {
+      "user" : "toby",
+      "text" : "Woof",
+      "timestamp"   : "2014-07-19T12:32:00.000Z"
+    },
+    "abc2" : {
+      "user" : "toby",
+      "text" : "Woof.. again",
+      "timestamp"   : "2014-07-19T12:34:00.000Z"
+    }
+  },
+  "errors": {
+    "empty-on-data-import": { "empty-on-data-import": true }
+  }
+}
