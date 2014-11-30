@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase_instance: 'twitter-mini',
     modulePrefix: 'twitter-mini',
     environment: environment,
     baseURL: '/',
