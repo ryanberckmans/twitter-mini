@@ -15,7 +15,7 @@ module.exports = function(environment) {
     },
 
     contentSecurityPolicy: {
-      'img-src': "'self' http://www.gravatar.com"
+      'img-src': "'self' http://*.gravatar.com https://*.gravatar.com"
     },
 
     APP: {
