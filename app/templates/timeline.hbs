@@ -1,10 +1,23 @@
 {{#each recentTweets}}
   <div class="tweet">
-    <div class="tweet_profile_pic">
-      {{gravatar-image email=author.email size=50}}
-    </div>
-    <div class="tweet_detail">
-      {{text}}
-    </div>
+    <table class="tweet_detail">
+      <tr>
+        <td rowspan=2 class="tweet_profile_pic">
+          {{#link-to 'user' author activeClass=""}}
+            {{gravatar-image email=author.email size=50}}
+          {{/link-to}}
+        </td>
+        <td>
+          {{#link-to 'user' author activeClass=""}}
+            <span class="fullname">{{author.firstName}} {{author.lastName}}</span>
+            <span class="twitter_handle">@{{author.id}}</span>
+          {{/link-to}}
+        </td>
+        <td class="tweet_timestamp">{{display-time-since timestamp}}</td>
+      </tr>
+      <tr>
+        <td colspan=2><span class="tweet_text">{{text}}</span></td>
+      </tr>
+    </table>
   </div>  
 {{/each}}

@@ -80,12 +80,32 @@ html, body {
   padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
+  padding-right: 20px;
+}
+
+.tweet_detail {
+  width: 100%;
+  color: #9aaab4;
+}
+
+.tweet_timestamp {
+  text-align: right;
+}
+
+.tweet_profile_pic {
+  width: 50px;
 }
 
 .tweet_profile_pic img {
   border-radius: 5px;
+  padding-right: 10px;
 }
 
-.tweet_profile_pic, .tweet_detail {
-  display: inline;
+.fullname {
+  font-weight: bold;
+  color: #000000;
+}
+
+.twitter_handle {
+  color: #9aaab4;
 }
