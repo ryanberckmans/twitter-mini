@@ -1,6 +1,6 @@
 # Twitter-mini
 
-twitter-mini is a "mini twitter experience" using ember-cli and the twitter api.
+twitter-mini is a "mini twitter experience" using ember-cli and mock twitter api with Firebase.
 
 # Dev Log
 
