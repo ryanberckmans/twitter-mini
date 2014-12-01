@@ -1,2 +1,15 @@
 
-User/index.hbs: {{firstName}} {{lastName}} {{email}}
+
+<div class="user_profile">
+{{firstName}} {{lastName}} {{email}}
+</div>
+
+<div class="compose_tweet">
+  {{input type="text" placeholder="Compose new Tweet..." value=newTweetText action="newTweet"}}
+</div>
+
+<div class="tweet_stream">
+  {{#each tweets}}
+  <p>{{text}}</p>
+  {{/each}}
+</div>
