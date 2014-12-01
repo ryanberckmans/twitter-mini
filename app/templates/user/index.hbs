@@ -1,20 +1,15 @@
-
-
 <div id="user_index">
   <div id="user_timeline">
     <div id="timeline_header">
       <div class="padded">Tweets</div>
-    </div>
-    <div class="padded">
-      {{#each tweets}}
-        <p>{{text}}</p>
-      {{/each}}
-    </div>
+    </div>    
+    {{render "timeline" allTweets}}
+    
   </div>
   <div id="user_profile">
     <table id="user_profile_table">
       <tr>
-        <td  colspan=2>
+        <td colspan=2>
           {{gravatar-image email=email}}
         </td>
       </tr>
@@ -31,9 +26,7 @@
           {{firstName}} {{lastName}}
         </td>
       </tr>
-    </table>
-    <div>
-      {{input id="compose_tweet" type="text" placeholder="Compose new Tweet..." value=newTweetText action="newTweet"}}
-    </div>
+    </table>  
+    {{input id="compose_tweet" type="text" placeholder="Compose new Tweet..." value=newTweetText action="newTweet"}}
   </div>
 </div>

@@ -1,6 +1,9 @@
 `import Ember from 'ember'`
 
 UserRoute = Ember.Route.extend
+  setupController: (controller, model) ->
+    controller.set 'model', model
+    controller.set 'allTweets', @store.find('tweet')
 
   actions:
     error: (error) ->

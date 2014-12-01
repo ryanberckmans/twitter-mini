@@ -1,0 +1,10 @@
+{{#each recentTweets}}
+  <div class="tweet">
+    <div class="tweet_profile_pic">
+      {{gravatar-image email=author.email size=50}}
+    </div>
+    <div class="tweet_detail">
+      {{text}}
+    </div>
+  </div>  
+{{/each}}

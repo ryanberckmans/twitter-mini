@@ -40,6 +40,11 @@ html, body {
   border-radius: 10px;
 }
 
+#user_profile img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 #user_profile_table {
   border-collapse: collapse;  
 }
@@ -51,6 +56,10 @@ html, body {
   border-color: #e1e1e1;
 }
 
+#compose_tweet {
+  margin: 10px
+}
+
 #user_timeline {
   float: right;
   width: 60%;
@@ -60,4 +69,23 @@ html, body {
   border-color: #e1e1e1;
   border-radius: 10px;
   background-color: #ffffff;
+}
+
+.tweet {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e1e1e1;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tweet_profile_pic img {
+  border-radius: 5px;
+}
+
+.tweet_profile_pic, .tweet_detail {
+  display: inline;
 }
