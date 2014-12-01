@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {{#link-to 'index' class="navbar-brand"}}Home{{/link-to}}
+      {{#link-to 'index' class="navbar-brand"}}{{fa-icon "home"}}Home{{/link-to}}
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
@@ -16,10 +16,11 @@
         {{#link-to 'discover' tagName="li"}}{{#link-to 'discover'}}Discover{{/link-to}}{{/link-to}}
       </ul>
       <div class="navbar-right">
-        <p class="navbar-text">Switch User (icon tbd)</p>
+        <p class="navbar-text">Switch User {{fa-icon "user"}}{{fa-icon "arrow-right"}}</p>
         <ul class="nav navbar-nav">
           {{#link-to 'user' 'ryan' tagName="li"}}{{#link-to 'user' 'ryan'}}Ryan{{/link-to}}{{/link-to}}
-          {{#link-to 'user' 'toby' tagName="li"}}{{#link-to 'user' 'toby'}}Toby{{/link-to}}{{/link-to}}
+          {{#link-to 'user' 'TobyTheDog' tagName="li"}}{{#link-to 'user' 'TobyTheDog'}}Toby{{/link-to}}{{/link-to}}
+          {{#link-to 'user' 'Fred' tagName="li"}}{{#link-to 'user' 'Fred'}}Fred{{/link-to}}{{/link-to}}
         </ul>
       </div>
     </div>
