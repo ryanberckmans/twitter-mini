@@ -2,6 +2,7 @@
   "predef": [
     "document",
     "window",
+    "md5",
     "-Promise"
   ],
   "browser": true,
