@@ -1,23 +1,39 @@
 
 
-<div class="user_profile">
-{{gravatar-image email=email}}
-{{firstName}} {{lastName}} {{email}}
-
-  <div class="tweet_count_container">
-    Tweets:
-    <div="tweet_count">
-      {{tweetCount}}
+<div id="user_index">
+  <div id="user_timeline">
+    <div id="timeline_header">
+      <div class="padded">Tweets</div>
+    </div>
+    <div class="padded">
+      {{#each tweets}}
+        <p>{{text}}</p>
+      {{/each}}
     </div>
   </div>
-</div>
-
-<div class="compose_tweet">
-  {{input type="text" placeholder="Compose new Tweet..." value=newTweetText action="newTweet"}}
-</div>
-
-<div class="tweet_stream">
-  {{#each tweets}}
-  <p>{{text}}</p>
-  {{/each}}
+  <div id="user_profile">
+    <table id="user_profile_table">
+      <tr>
+        <td  colspan=2>
+          {{gravatar-image email=email}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="tweet_count_container">
+            TWEETS:
+            <div class="tweet_count">
+              {{tweetCount}}
+            </div>
+          </div>
+        </td>
+        <td>
+          {{firstName}} {{lastName}}
+        </td>
+      </tr>
+    </table>
+    <div>
+      {{input id="compose_tweet" type="text" placeholder="Compose new Tweet..." value=newTweetText action="newTweet"}}
+    </div>
+  </div>
 </div>
