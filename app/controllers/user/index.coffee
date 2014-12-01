@@ -2,6 +2,10 @@
 `import Tweet from '../../models/tweet'`
 
 UserIndexController = Ember.ObjectController.extend
+  tweetCount: (->
+    @get('tweets').get 'length'
+  ).property 'tweets.@each'
+
   actions:
     newTweet: (newTweetText) ->
       user = @get 'model'
@@ -12,7 +16,6 @@ UserIndexController = Ember.ObjectController.extend
       tweet.save()
       user.save()
       @set 'newTweetText', null
-      # TBD - "Composed" message
-      # TBD - reset text in Compose box
+      # TBD - "Composed!" message
 
 `export default UserIndexController`
