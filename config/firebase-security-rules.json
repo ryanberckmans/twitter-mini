@@ -1,22 +1,17 @@
 {
-  // Global read/write Firebase rules for quick paste
-  // DO NOT UNCOMMENT. Just for pasting into firebase gui when uploading test data { "rules": { ".read": true, ".write": true } }
-  // Production rules follow...
-
   "rules": {
-    ".read": "true", // allow global reads by any client
+    ".read": "true",  // allow global reads by any client
+    ".write": "true", // allow global write by any client... an example app with no security :)
     "users": {
       "$user_id": {}
     },
 
-    "tweets": {
+    "tweets": {      
       "$tweet_id": {}
     },
 
     "errors": {
       "$error_id": {
-        // errors are write-once by anyone
-        ".write": "!data.exists()",
         ".validate": "newData.hasChildren(['timestamp','stack','otherInformation'])",
 
         "timestamp": {
