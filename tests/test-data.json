@@ -8,13 +8,21 @@
         "abc0" : true
       }
     },
-    "toby" : {
-      "lastName" : "Jones Berckmans",
+    "TobyTheDog" : {
+      "lastName" : "J.B.",
       "firstName" : "Toby",
       "email": null,
       "tweets" : {
         "abc1" : true,
         "abc2" : true
+      }
+    },
+    "Fred" : {
+      "lastName" : "Ex. Ample",
+      "firstName" : "Fred",
+      "email": "FredTheExampleGuy@gmail.com",
+      "tweets" : {
+        "abc3" : true
       }
     }
   },
@@ -22,17 +30,22 @@
     "abc0" : {
       "author" : "ryan",
       "text" : "Hello World :)",
-      "timestamp"   : "2014-07-19T12:30:00.000Z"
+      "timestamp"   : "2014-11-30T12:30:00.000Z"
     },
     "abc1" : {
-      "author" : "toby",
-      "text" : "Woof",
-      "timestamp"   : "2014-07-19T12:32:00.000Z"
+      "author" : "TobyTheDog",
+      "text" : "Woof!",
+      "timestamp"   : "2014-11-29T12:32:00.000Z"
     },
     "abc2" : {
-      "author" : "toby",
-      "text" : "Woof.. again",
-      "timestamp"   : "2014-07-19T12:34:00.000Z"
+      "author" : "TobyTheDog",
+      "text" : "Woof! Time for a treat?",
+      "timestamp"   : "2014-11-29T12:34:00.000Z"
+    },
+    "abc3" : {
+      "author" : "Fred",
+      "text" : "Anybody have a profile pic I can use? I haven't registered mine with gravatar.",
+      "timestamp"   : "2014-11-30T12:54:00.000Z"
     }
   },
   "errors": {
