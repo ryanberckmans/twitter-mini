@@ -8,8 +8,10 @@ GravatarImageComponent = Ember.Component.extend
   src: (->
     email = @get 'email'
     email = 'none' unless email
+    size  = @get 'size'
+    size  = @get 'DEFAULT_GRAVATAR_SIZE' unless size
 
-    'http://www.gravatar.com/avatar/' + md5(email.toLowerCase()) + '?d=mm&s=' + @get('DEFAULT_GRAVATAR_SIZE')
+    'http://www.gravatar.com/avatar/' + md5(email.toLowerCase()) + '?d=mm&s=' + size
   ).property 'email'
 
 `export default GravatarImageComponent`
