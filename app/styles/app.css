@@ -7,10 +7,24 @@ html, body {
   padding: 10px;
 }
 
+.navbar {
+  background-color: #59adeb;
+}
+
+.navbar a {
+  color: #c5e2f8;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #59adeb;
+}
+
 #user_index {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 45px;
 }
 
 #timeline_header {
