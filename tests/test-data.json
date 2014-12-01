@@ -20,17 +20,17 @@
   },
   "tweets" : {
     "abc0" : {
-      "user" : "ryan",
+      "author" : "ryan",
       "text" : "Hello World :)",
       "timestamp"   : "2014-07-19T12:30:00.000Z"
     },
     "abc1" : {
-      "user" : "toby",
+      "author" : "toby",
       "text" : "Woof",
       "timestamp"   : "2014-07-19T12:32:00.000Z"
     },
     "abc2" : {
-      "user" : "toby",
+      "author" : "toby",
       "text" : "Woof.. again",
       "timestamp"   : "2014-07-19T12:34:00.000Z"
     }
