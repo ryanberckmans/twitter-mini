@@ -6,10 +6,8 @@ GravatarImageComponent = Ember.Component.extend
   attributeBindings: ['src', 'alt']
   alt: 'Gravatar Pic'
   src: (->
-    email = @get 'email'
-    email = 'none' unless email
-    size  = @get 'size'
-    size  = @get 'DEFAULT_GRAVATAR_SIZE' unless size
+    email = @get('email') || 'none'
+    size  = @get('size')  || @get('DEFAULT_GRAVATAR_SIZE')
 
     'https://www.gravatar.com/avatar/' + md5(email.toLowerCase()) + '?d=mm&s=' + size
   ).property 'email'
